@@ -195,7 +195,7 @@ header .contenedor-texto .foto:before{
   }
 }
 header .contenedor-texto .foto:after{
-  content: url('../assets/img/perfil.jpg');
+  content: url('assets/img/perfil.jpg');
   height: 94%;
   width: 94%;
   position: absolute;
