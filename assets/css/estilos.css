@@ -642,6 +642,9 @@ body.active  .portfolio {
   background-color: #f2f2f2;
   color: #000;
 }
+body.active .portfolio .galeria img {
+ border: 3px solid #ff6b01;
+}
 body.active .directorio {
   background-color: #AAB6BE;
   color: #000;
