@@ -13,6 +13,7 @@ body {
 }
 
 .contenedor {
+  width: 100%;
   max-width: 1200px;
   margin: auto;
   overflow: hidden;
@@ -577,7 +578,7 @@ footer .redes-sociales .redes a:hover {
    }
   
 }
-@media (min-width: 390px) and (max-width: 767px) {
+@media (max-width: 767px) {
   header .contenedor-texto {
     flex-direction: column;
     align-items: center;
@@ -631,6 +632,81 @@ footer .redes-sociales .redes a:hover {
 }
 .directorio .contenedor-directorio .mapa {
  display: none;
+}
+/* ----- ----- Menu ----- ----- */
+header .container__menu {
+ margin-left: 30px;
+}
+
+header .menu nav{
+  position: fixed;
+  top: 0;
+  right: -250px;
+  background: #ff6b017a;
+  width: 200px;
+  height: 100vh;
+  padding: 40px;
+  z-index: 1;
+  transition: all 500ms;
+}
+
+header .menu ul{
+  flex-direction: column;
+  margin-top: 40px;
+  align-items: flex-end;
+}
+
+header .menu ul li{
+  margin-top: 30px;
+  margin-left: -30px;
+}
+
+header  .menu ul li a{
+  color: #070101;
+  font-size: 20px;
+}
+
+header .menu a:hover {
+  border-bottom: 2px solid #ff6b01;
+}
+
+#selected{
+  background: none;
+  padding: 0px;
+  border-radius: none;
+  color: #F6615D;
+}
+
+.menu nav img{
+  display: block;
+  width: 60px;
+}
+
+#back_menu{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0,0,0,0.5);
+  display: none;
+}
+
+header .menu #btn_menu{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  background:#ff6b01;
+  font-size: 24px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 300ms;
+}
+
+header .menu #btn_menu:hover{
+  background: rgba(255, 255, 255, 0.2);
 }
 }
 
